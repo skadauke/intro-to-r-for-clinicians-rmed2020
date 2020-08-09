@@ -70,3 +70,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# RStudio Server Pro key - don't include on GitHub
+rsp/.key
