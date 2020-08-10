@@ -13,7 +13,7 @@ Run the following code chunk to set up the practice data sets.
 library(tidyverse)
 library(lubridate)
 
-covid_testing <- read_csv("data/covid_testing.csv") 
+covid_testing <- read_csv("covid_testing.csv") 
 ```
 
 
