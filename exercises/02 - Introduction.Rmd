@@ -1,5 +1,5 @@
 ---
-title: "Exercises for 01 - Introduction"
+title: "Exercises for 02 - Introduction"
 output: html_document
 ---
 
