@@ -5,9 +5,7 @@ output: html_notebook
 
 ### Your Turn 5: The ggplot template and aesthetics
 
-For this exercise, we will practice a technique called "pair programming". One person in the breakout room will share their screen, showing the RStudio Cloud console. This person will act as the "scribe" for the rest of the group who will contribute by making suggestions. 
-
-Run the following code chunk to set up the practice data sets.
+Run the following code chunk to import the COVID19 data.
 
 ```{r, warning = FALSE, message = FALSE}
 library(tidyverse)
@@ -44,9 +42,7 @@ When you run this code, you will most likely have what looks like an error displ
 
 This is actually just a message from R, telling you that it's a bad idea to use a default bin width. 
 
-The *pan_day* variable holds the day of the pandemic (an arbitrary day in late February of 2020) on which the COVID test order was placed. What would be an appropriate binwidth for *pan_day*? Discuss with your breakout-roommates! 
-
-(Hint: you might want to be able to see _daily_ COVID test volumes!)
+The *pan_day* variable holds the day of the pandemic (an arbitrary day in late February of 2020) on which the COVID test order was placed. What would be an appropriate binwidth for *pan_day* to see *daily* test volumes?
 
 Now fill in the blanks below to recreate the code from the previous chunk, with the *binwidth* argument passed to the *geom_histogram* function. 
 
@@ -62,22 +58,40 @@ The effect of reducing the bin width (and increasing the number of bins) is that
 
 Let's next add some color!
 
-Copy and paste the previous code chunk and add an aesthetic mapping that maps the *fill* aesthetic to the *result* column. (Hint: all aesthetics must be defined inside the aes() function!)
+Copy and paste the previous code chunk and add an aesthetic mapping that maps the *fill* aesthetic to the *result* column. (Hint: all aesthetics must be defined *inside* the aes() function!)
 
 
 
 
-Stop here.
 
-*******************************************************
+
+
+
+
+
+
+
+
+***************************************************************************************
+***************************************************************************************
+***************************************************************************************
+***************************************************************************************
+***************************************************************************************
+********************************                    ***********************************
+********************************     Stop here.     ***********************************
+********************************                    ***********************************
+***************************************************************************************
+***************************************************************************************
+***************************************************************************************
+***************************************************************************************
+***************************************************************************************
+
 
 
 
 
 
 ### Your Turn 6: Geom functions
-
-Let's do another pair programming exercise! (Someone else should be the scribe this time.)
 
 Run the following code chunk:
 
@@ -87,7 +101,7 @@ ggplot(data = covid_testing) +
 ```
 
 
-Now, with your group, try to figure out how you would modify the code above so it draws a frequency polygon instead of histogram. Hint: Google is your friend!
+Now try to figure out how you would modify the code above so it draws a frequency polygon instead of histogram. 
 
 ```{r}
 
@@ -96,7 +110,7 @@ Now, with your group, try to figure out how you would modify the code above so i
 
 
 
-Modify the previous code chunk so that the frequency polygon's line color is blue. (Hint: color values go in quotes!)
+Modify the previous code chunk so that the frequency polygon's line color is blue. (Hint: color names go in quotes!)
 
 ```{r}
 
@@ -108,7 +122,7 @@ Modify the previous code chunk so that the frequency polygon's line color is blu
 
 
 
-Within your group, predict what the following code will do. 
+What do you think the following code will do? Try to predict what you'll see.
 
 Then run it.
 

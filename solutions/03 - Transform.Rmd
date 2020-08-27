@@ -38,15 +38,15 @@ Use select, filter and %>% in the following chunk to write a sequence of functio
 
 1. Filters to tests from the clinic (`clinic_name`) of "picu"
 
-2. Selects the column with the receive to verify turnaround time (`rec_ver_tat`) as well as the day from start of the pandemic (`pan_day`)
+2. Selects the column with the received-to-verified turnaround time (`rec_ver_tat`) as well as the day from start of the pandemic (`pan_day`)
 
 ```{r Your Turn}
 covid_testing %>% # name of data goes here
-  filter(clinic_name=="picu") %>% 
-  select(pan_day,clinic_name) 
+  filter(clinic_name == "picu") %>% 
+  select(pan_day, clinic_name) 
 ```
 
-Use mutate with %>% to create a new column containing the total turnaround time for each test (sum of col_rec_tat and rec_ver_tat).
+Use mutate with %>% to create a new column named "total_tat" containing the total turnaround time for each test (sum of `col_rec_tat` and `rec_ver_tat`).
 
 ```{r}
 covid_testing %>%
